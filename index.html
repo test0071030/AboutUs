@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AboutUs</title>
+	<meta charset="utf-8">
+	<link href="app.css" rel="stylesheet" type="text/css">
+	<!-- jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<!-- SemanticUI -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.js"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="header">Title</div>
+	<div class="block">
+		<div id="content">
+			<p class="title">welcome</p>
+			<p class="text">
+				AAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAA
+			</p>
+		</div>
+		<div id="members">
+			<div class="first row">
+				<div id="CHUEH" class="frame"></div>
+				<div id="KE" class="frame"></div>
+			</div>
+			<div class="second row">
+				<div id="SU" class="frame"></div>
+				<div id="LIAO" class="frame"></div>
+			</div>
+			<div class="third row">
+				<div id="WU" class="frame"></div>
+				<div id="CHEN" class="frame"></div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".frame").click(function(){
+			$("#content p").toggle()
+			$(".frame").not(this).toggle("slow")
+			$(this).toggleClass( "showing", 1000)
+			
+		})
+	})
+</script>
+</html>
