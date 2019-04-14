@@ -4,6 +4,7 @@
 	<title>AboutUs</title>
 	<meta charset="utf-8">
 	<link href="app.css" rel="stylesheet" type="text/css">
+	
 	<!-- jQuery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -12,17 +13,18 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<div id="header">Title</div>
+	<div id="header">
+	</div>
 	<div class="block">
 		<div id="content">
-			<p class="title">welcome</p>
+			<img class="title" src="https://i.imgur.com/gsOvgrJ.png">
 			<p class="text">
-				AAAAAAAAAAAAAAAAAAAAAA
-				AAAAAAAAAAAAAAAAAAAAAA
-				AAAAAAAAAAAAAAAAAAAAAA
-				AAAAAAAAAAAAAAAAAAAAAA
-				AAAAAAAAAAAAAAAAAAAAAA
+				<t1><b>我們做事，<br>品質保證。</b></t1>
+				<t2>我們是一群瘋癲又有才的熱血年輕人，<br>廢話不多，請往右移！<br><br>就用一句話來認識我們。
+				</t2>
 			</p>
+			<img class="quote" src="https://i.imgur.com/FhXXUW9.png">
+			<img class="back" src="https://i.imgur.com/JiNUZEQ.png">
 		</div>
 		<div id="members">
 			<div class="first row">
@@ -42,11 +44,15 @@
 </body>
 <script type="text/javascript">
 	$(document).ready(function(){
+		$("#content .back").toggle()
+		$("#content .quote").toggle()
 		$(".frame").click(function(){
 			$("#content p").toggle()
+			$("#content .title").toggle()
+			$("#content .back").toggle("slow")
+			$("#content .quote").toggle("slow")
 			$(".frame").not(this).toggle("slow")
-			$(this).toggleClass( "showing", 1000)
-			
+			$(this).toggleClass( "showing", 1000)	
 		})
 	})
 </script>

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300');
 
 #header{
 	margin: 40px;
@@ -12,6 +13,7 @@
 }
 
 #content{
+	position: relative;
 	display: flex;
 	flex-direction: column; 
 	justify-content: center;
@@ -20,9 +22,46 @@
 	margin-right: 0.5%;
 	border-radius: 5%;
 	padding: 15px;
-	width : 40%;
+	width : 400px;
 	height: 100%;
-	background-color: #3333
+	background-color: #F0F0F0;
+}
+
+#content .text t1{
+	font-size: 18px;
+	font-family: 'Noto Sans TC', sans-serif;
+	position: absolute;
+	left:50px;
+	top:220px;
+}
+
+#content .text t2{
+	font-size: 18px;
+	font-family: 'Noto Sans TC', sans-serif;
+	position: absolute;
+	left:50px;
+	top:300px;
+}
+
+#content .title{
+	width: 70%;
+	position: absolute;
+	top:60px;
+	left:40px;
+}
+
+#content .back{
+	width: 6%;
+	position: absolute;
+	left:30px;
+	top:400px;
+}
+
+#content .quote{
+	width: 10%;
+	position: absolute;
+	left:80px;
+	top:220px;
 }
 
 #members{
@@ -35,7 +74,7 @@
 	margin-left: 0.5%;
 	border-radius: 5%;
 	height: 100%;
-	background-color: #4444
+	background-color: #F0F0F0;
 }
 
 .row{
