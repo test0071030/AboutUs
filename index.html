@@ -3,7 +3,7 @@
 <head>
 	<title>AboutUs</title>
 	<meta charset="utf-8">
-	<link href="app.css" rel="stylesheet" type="text/css">
+	<link href="app.css" rel="stylesheet" type="text/css">	
 	<!-- jQuery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -44,44 +44,5 @@
 		</div>
 	</div>
 </body>
-<script type="text/javascript">
-	$(document).ready(function(){
-		$("#content .back").toggle()
-		$("#content .quote").toggle()
-		$("#content .name").toggle()
-		$(".frame").click(function(){
-			$("#content p").toggle()
-			$("#content .title").toggle()
-			$("#content .back").toggle("slow")
-			$("#content .quote").toggle("slow")
-			$(".frame").not(this).toggle("slow")
-			$(this).toggleClass( "showing", 1000)	
-			if($(this).is("#CHUEH")){
-				$("#CHUEH img").attr("src","https://i.imgur.com/adK2Tmu.png");
-				$("#CHUEH img").toggleClass( "showing", 1000);
-			}
-			if($(this).is("#KE")){
-				$("#KE img").attr("src","https://i.imgur.com/ZRgJHOl.png");
-				$("#KE img").toggleClass( "showing", 1000);
-			}
-			if($(this).is("#SU")){
-				$("#SU img").attr("src","https://i.imgur.com/Bv17oaZ.png");
-				$("#SU img").toggleClass( "showing", 1000);
-			}
-			if($(this).is("#LIAO")){
-				$("#LIAO img").attr("src","https://i.imgur.com/zRc62vI.png");
-				$("#LIAO img").toggleClass( "showing", 1000);
-			}
-			if($(this).is("#WU")){
-				$("#WU img").attr("src","");
-				$("#WU img").toggleClass( "showing", 1000);
-			}
-			if($(this).is("#CHEN")){
-				$("#CHEN img").attr("src","https://i.imgur.com/pwQW97u.png");
-				$("#CHEN img").toggleClass( "showing", 1000);
-			}
-
-		})
-	})
-</script>
+<script src="app.js"></script>
 </html>
