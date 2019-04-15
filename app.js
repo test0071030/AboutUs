@@ -41,7 +41,11 @@ let display = true
 				display = !display
 			}
 		})
-  $(".quote").click(function(){
-
-    })
+  		$(".quote").click(function(){
+			$("#content p").toggle("slow")
+			$("#content .title").toggle("slow")
+			$("#content .back").toggle("slow")
+			$("#content .quote").toggle("slow")
+			$(".frame").toggle("slow")
+    		})
 	})
