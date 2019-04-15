@@ -47,7 +47,6 @@ let display = true
 				$("#content .title").toggle("slow")
 				$("#content .back").toggle("slow")
 				$("#content .quote").toggle("slow")
-				$(this).toggle("slow")
 				$(".frame").not(current).toggle("slow")
 				$(current).toggleClass( "showing", 1000)
 				if($(current).is("#CHUEH")){
