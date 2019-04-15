@@ -53,7 +53,7 @@ let display = true
 					display?$("#CHUEH img").attr("src","https://i.imgur.com/adK2Tmu.png"):$("#CHUEH img").attr("src","https://i.imgur.com/Fq8AHjI.png");
 					$("#CHUEH img").toggleClass( "showing", 1000);
 					display = !display
-				}$
+				}
 				if($(tempsave).is("#KE")){
 					display?$("#KE img").attr("src","https://i.imgur.com/ZRgJHOl.png"):$("#KE img").attr("src","https://i.imgur.com/eCyrqtM.png")
 					$("#KE img").toggleClass( "showing", 1000);
