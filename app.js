@@ -40,9 +40,9 @@ let display = true
 				$("#CHEN img").toggleClass( "showing", 1000);
 				display = !display
 			}
-			tempsave=this
-			
-			$(".back").click(function(){
+			tempsave=this	
+			})
+		$(".back").click(function(){
 				$("#content p").toggle("slow")
 				$("#content .title").toggle("slow")
 				$("#content .back").toggle("slow")
@@ -79,6 +79,5 @@ let display = true
 					$("#CHEN img").toggleClass( "showing", 1000);
 					display = !display
 				}
-		})
-    	})	
+    		})	
 })
